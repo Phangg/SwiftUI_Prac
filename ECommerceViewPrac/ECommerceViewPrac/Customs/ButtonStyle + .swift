@@ -16,7 +16,7 @@ extension ButtonStyle where Self == GhostButton {
 }
 
 extension ButtonStyle where Self == FilledButton {
-    static var filled: Self {
-        return .init()
+    static func filled(with color: Color) -> Self {
+        return FilledButton(color: color)
     }
 }

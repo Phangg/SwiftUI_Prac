@@ -11,8 +11,7 @@ import SwiftUI
 struct ECommerceViewPracApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            CustomButtons()
+            LoginView()
         }
     }
 }

@@ -8,25 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		09AB7BDF2B11D08F0073EAD5 /* ECommerceViewPracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BDE2B11D08F0073EAD5 /* ECommerceViewPracApp.swift */; };
-		09AB7BE12B11D08F0073EAD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BE02B11D08F0073EAD5 /* ContentView.swift */; };
+		09AB7BE12B11D08F0073EAD5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BE02B11D08F0073EAD5 /* LoginView.swift */; };
 		09AB7BE32B11D0910073EAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AB7BE22B11D0910073EAD5 /* Assets.xcassets */; };
 		09AB7BE62B11D0910073EAD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AB7BE52B11D0910073EAD5 /* Preview Assets.xcassets */; };
 		09AB7BEE2B11D3110073EAD5 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BED2B11D3110073EAD5 /* CustomButtons.swift */; };
 		09AB7BF02B11D47F0073EAD5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AB7BEF2B11D47F0073EAD5 /* Colors.xcassets */; };
 		09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */; };
 		09AB7BF42B11DB0C0073EAD5 /* ButtonStyle + .swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */; };
+		09AB7BF72B11E9C10073EAD5 /* LoginDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */; };
+		09AB7BF92B124B940073EAD5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF82B124B940073EAD5 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09AB7BDB2B11D08F0073EAD5 /* ECommerceViewPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECommerceViewPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AB7BDE2B11D08F0073EAD5 /* ECommerceViewPracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECommerceViewPracApp.swift; sourceTree = "<group>"; };
-		09AB7BE02B11D08F0073EAD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		09AB7BE02B11D08F0073EAD5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		09AB7BE22B11D0910073EAD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09AB7BE52B11D0910073EAD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09AB7BED2B11D3110073EAD5 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		09AB7BEF2B11D47F0073EAD5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTexts.swift; sourceTree = "<group>"; };
 		09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle + .swift"; sourceTree = "<group>"; };
+		09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDialog.swift; sourceTree = "<group>"; };
+		09AB7BF82B124B940073EAD5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				09AB7BDE2B11D08F0073EAD5 /* ECommerceViewPracApp.swift */,
-				09AB7BE02B11D08F0073EAD5 /* ContentView.swift */,
+				09AB7BF52B11E7960073EAD5 /* Login */,
 				09AB7BEC2B11D2FB0073EAD5 /* Customs */,
 				09AB7BE22B11D0910073EAD5 /* Assets.xcassets */,
 				09AB7BEF2B11D47F0073EAD5 /* Colors.xcassets */,
@@ -82,9 +86,19 @@
 			children = (
 				09AB7BED2B11D3110073EAD5 /* CustomButtons.swift */,
 				09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */,
+				09AB7BF82B124B940073EAD5 /* CustomTextField.swift */,
 				09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */,
 			);
 			path = Customs;
+			sourceTree = "<group>";
+		};
+		09AB7BF52B11E7960073EAD5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09AB7BE02B11D08F0073EAD5 /* LoginView.swift */,
+				09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,11 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09AB7BE12B11D08F0073EAD5 /* ContentView.swift in Sources */,
+				09AB7BE12B11D08F0073EAD5 /* LoginView.swift in Sources */,
+				09AB7BF92B124B940073EAD5 /* CustomTextField.swift in Sources */,
 				09AB7BDF2B11D08F0073EAD5 /* ECommerceViewPracApp.swift in Sources */,
 				09AB7BF42B11DB0C0073EAD5 /* ButtonStyle + .swift in Sources */,
 				09AB7BEE2B11D3110073EAD5 /* CustomButtons.swift in Sources */,
 				09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */,
+				09AB7BF72B11E9C10073EAD5 /* LoginDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

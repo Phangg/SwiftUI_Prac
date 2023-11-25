@@ -17,7 +17,15 @@ struct CustomButtons: View {
                 Text("Filled Button")
                     .modifier(InButton())
             }
-            .buttonStyle(.filled)
+            .buttonStyle(.filled(with: Color.mainBlue))
+            // Filled Button
+            Button {
+                print("Filled Button Tapped")
+            } label: {
+                Text("Filled Button")
+                    .modifier(InButton())
+            }
+            .buttonStyle(.filled(with: Color.darkGray))
             // Ghost Button
             Button {
                 print("Ghost Button Tapped")
@@ -31,17 +39,18 @@ struct CustomButtons: View {
     }
 }
 
-// MARK: - 메인 컬러 들어간 Prominent Style
+// MARK: - 컬러 들어간 Prominent Style
 struct FilledButton: ButtonStyle {
+    let color: Color
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.vertical, 15)
             .padding(.horizontal, 20)
             .background(
-              RoundedRectangle(cornerRadius: 10)
-                .fill(Color.mainBlue)
-                .stroke(Color.mainBlue, lineWidth: 1)
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(color)
+                    .stroke(color, lineWidth: 1)
             )
             .foregroundStyle(Color.white)
             .cornerRadius(10)
@@ -52,9 +61,6 @@ struct FilledButton: ButtonStyle {
 // MARK: - GhostButton Style
 struct GhostButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
-        var isRelease: Bool {
-            !configuration.isPressed
-        }
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding(.vertical, 15)
