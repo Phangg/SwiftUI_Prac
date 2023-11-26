@@ -30,7 +30,7 @@ struct CustomTextField: ViewModifier {
             return content
                 .padding(.horizontal, 20)
                 .padding(.vertical, 16)
-                .frame(minWidth: 75, maxWidth: .infinity, maxHeight: 50, alignment: .center)
+                .frame(minWidth: 75, maxWidth: .infinity, maxHeight: 60, alignment: .center)
                 .background(Color.offGray)
                 .cornerRadius(10)
         }

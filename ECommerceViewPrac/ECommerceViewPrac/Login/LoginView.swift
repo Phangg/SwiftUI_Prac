@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    //    @State var isActive: Bool = true
+//    @State var isActive: Bool = true
     @State var emailText = ""
     @State var passwordText = ""
     @State var showPassword = false
@@ -69,9 +69,9 @@ struct LoginView: View {
                     }
                 }
                 .padding(.horizontal, 25)
-                //            if isActive {
-                //                LoginDialog(isActive: $isActive)
-                //            }
+//                if isActive {
+//                    LoginDialog(isActive: $isActive)
+//                }
             }
         }
     }
