@@ -63,7 +63,7 @@ struct LoginDialog: View {
             .padding()
             .background(Color.white)
             .clipShape(.rect(cornerRadius: 10))
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 25)
             .offset(x: 0, y: offset)
             .onAppear {
                 withAnimation(.spring()) {

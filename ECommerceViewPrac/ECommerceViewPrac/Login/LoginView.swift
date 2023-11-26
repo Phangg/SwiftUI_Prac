@@ -17,114 +17,61 @@ struct LoginView: View {
     }
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading) {
-                Spacer()
-                Text("Welcome to Mega Mall")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.navyBlack)
-                    .frame(width: 200)
-                    .multilineTextAlignment(.leading)
-                    .padding(.bottom, 10)
-                Text("로그인을 위해 데이터를 입력해주세요")
-                    .font(.system(size: 16))
-                    .fontWeight(.light)
-                    .foregroundStyle(Color.darkGray)
-                    .padding(.bottom, 50)
-                Text("Email / Phone")
-                    .font(.system(size: 16))
-                    .foregroundStyle(Color.navyBlack)
-                    .padding(.bottom, 10)
-                HStack {
-                    TextField(text: $emailText) {
-                        Text("이메일 혹은 핸드폰 번호를 입력해주세요")
-                            .font(.system(size: 16))
-                            .foregroundStyle(Color.halfGray)
-                    }
-                    .textInputAutocapitalization(.never)
-                    if !emailText.isEmpty {
-                        Button(action: {
-                            removeText(type: "email")
-                        }) {
-                            Image(systemName: "xmark.circle.fill")
-                                .foregroundStyle(Color.darkGray)
-                        }
-                    }
-                }
-                .modifier(CustomTextField())
-                .padding(.bottom, 30)
-                Text("Password")
-                    .font(.system(size: 16))
-                    .foregroundStyle(Color.navyBlack)
-                    .padding(.bottom, 10)
-                
-                HStack {
-                    if showPassword {
-                        TextField(text: $passwordText) {
-                            Text("비밀번호를 입력해주세요")
-                                .font(.system(size: 16))
-                                .foregroundStyle(Color.halfGray)
-                        }
-                    } else {
-                        SecureField(text: $passwordText) {
-                            Text("비밀번호를 입력해주세요")
-                                .font(.system(size: 16))
-                                .foregroundStyle(Color.halfGray)
-                        }
-                    }
-                    Button {
-                        showPassword.toggle()
-                    } label: {
-                        Image(systemName: showPassword ? "eye.slash" : "eye")
-                            .foregroundStyle(Color.darkGray)
-                    }
-                }
-                .modifier(CustomTextField())
-                .padding(.bottom, 70)
-                    
-                Button {
-                    // TODO: 로그인
-                    if clickableLoginButton {
-                        
-                    }
-                } label: {
-                    Text("로그인")
-                        .modifier(InButton())
-                }
-                .buttonStyle(.filled(with: clickableLoginButton ? Color.mainBlue : Color.darkGray))
-                .disabled(!clickableLoginButton)
-                Spacer()
-                HStack {
-                    Button {
-                        // TODO: 비밀번호 찾기
-                    } label: {
-                        Text("Forgot Password")
-                            .font(.system(size: 16))
-                            .foregroundStyle(Color.navyBlack)
-                    }
+        NavigationStack {
+            ZStack {
+                VStack(alignment: .leading) {
                     Spacer()
+                    Text("Welcome to \nMega Mall")
+                        .modifier(LargeText())
+                        .padding(.bottom, 20)
+                    Text("로그인을 위해 데이터를 입력해주세요")
+                        .modifier(BodyText(fontColor: .darkGray))
+                        .padding(.bottom, 50)
+                    Text("Email / Phone")
+                        .modifier(BodyText(fontColor: .navyBlack))
+                        .padding(.bottom, 10)
+                    GrayTextField(text: $emailText,
+                                  placeHolder: "이메일 혹은 핸드폰 번호를 입력해주세요")
+                        .padding(.bottom, 30)
+                    Text("Password")
+                        .modifier(BodyText(fontColor: .navyBlack))
+                        .padding(.bottom, 10)
+                    PasswordTextField(showPassword: $showPassword,
+                                      passwordText: $passwordText)
+                        .padding(.bottom, 70)
                     Button {
-                        // TODO: 회원 가입
+                        // TODO: 로그인 로직 검증 후 다음 페이지
+                        if clickableLoginButton {
+                            
+                        }
                     } label: {
-                        Text("Sign Up")
-                            .font(.system(size: 16))
-                            .foregroundStyle(Color.mainBlue)
+                        Text("로그인")
+                            .modifier(InButton())
+                    }
+                    .buttonStyle(.filled(with: clickableLoginButton ? Color.mainBlue : Color.darkGray))
+                    .disabled(!clickableLoginButton)
+                    Spacer()
+                    HStack {
+                        Button {
+                            // TODO: 비밀번호 찾기
+                        } label: {
+                            Text("Forgot Password")
+                                .modifier(BodyText(fontColor: .navyBlack))
+                        }
+                        Spacer()
+                        Button {
+                            // TODO: 회원 가입
+                        } label: {
+                            Text("Sign Up")
+                                .modifier(BodyText(fontColor: .mainBlue))
+                        }
                     }
                 }
+                .padding(.horizontal, 25)
+                //            if isActive {
+                //                LoginDialog(isActive: $isActive)
+                //            }
             }
-            .padding()
-            //            if isActive {
-            //                LoginDialog(isActive: $isActive)
-            //            }
-        }
-    }
-    
-    private func removeText(type: String) {
-        if type == "email" {
-            emailText = ""
-        } else if type == "password" {
-            passwordText = ""
         }
     }
 }

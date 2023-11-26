@@ -16,7 +16,11 @@
 		09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */; };
 		09AB7BF42B11DB0C0073EAD5 /* ButtonStyle + .swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */; };
 		09AB7BF72B11E9C10073EAD5 /* LoginDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */; };
-		09AB7BF92B124B940073EAD5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF82B124B940073EAD5 /* CustomTextField.swift */; };
+		09AB7BF92B124B940073EAD5 /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BF82B124B940073EAD5 /* CustomTextFields.swift */; };
+		09AB7BFB2B12EFC10073EAD5 /* PassWordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BFA2B12EFC10073EAD5 /* PassWordResetView.swift */; };
+		09AB7BFD2B12F2910073EAD5 /* GrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BFC2B12F2910073EAD5 /* GrayTextField.swift */; };
+		09AB7BFF2B12F6D10073EAD5 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7BFE2B12F6D10073EAD5 /* PasswordTextField.swift */; };
+		09AB7C012B12FF780073EAD5 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C002B12FF780073EAD5 /* VerificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +34,11 @@
 		09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTexts.swift; sourceTree = "<group>"; };
 		09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle + .swift"; sourceTree = "<group>"; };
 		09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDialog.swift; sourceTree = "<group>"; };
-		09AB7BF82B124B940073EAD5 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		09AB7BF82B124B940073EAD5 /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
+		09AB7BFA2B12EFC10073EAD5 /* PassWordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordResetView.swift; sourceTree = "<group>"; };
+		09AB7BFC2B12F2910073EAD5 /* GrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextField.swift; sourceTree = "<group>"; };
+		09AB7BFE2B12F6D10073EAD5 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		09AB7C002B12FF780073EAD5 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +94,9 @@
 			children = (
 				09AB7BED2B11D3110073EAD5 /* CustomButtons.swift */,
 				09AB7BF12B11D6CB0073EAD5 /* CustomTexts.swift */,
-				09AB7BF82B124B940073EAD5 /* CustomTextField.swift */,
+				09AB7BF82B124B940073EAD5 /* CustomTextFields.swift */,
+				09AB7BFC2B12F2910073EAD5 /* GrayTextField.swift */,
+				09AB7BFE2B12F6D10073EAD5 /* PasswordTextField.swift */,
 				09AB7BF32B11DB0C0073EAD5 /* ButtonStyle + .swift */,
 			);
 			path = Customs;
@@ -97,6 +107,8 @@
 			children = (
 				09AB7BE02B11D08F0073EAD5 /* LoginView.swift */,
 				09AB7BF62B11E9C10073EAD5 /* LoginDialog.swift */,
+				09AB7BFA2B12EFC10073EAD5 /* PassWordResetView.swift */,
+				09AB7C002B12FF780073EAD5 /* VerificationView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -172,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09AB7BFF2B12F6D10073EAD5 /* PasswordTextField.swift in Sources */,
 				09AB7BE12B11D08F0073EAD5 /* LoginView.swift in Sources */,
-				09AB7BF92B124B940073EAD5 /* CustomTextField.swift in Sources */,
+				09AB7BF92B124B940073EAD5 /* CustomTextFields.swift in Sources */,
 				09AB7BDF2B11D08F0073EAD5 /* ECommerceViewPracApp.swift in Sources */,
+				09AB7BFB2B12EFC10073EAD5 /* PassWordResetView.swift in Sources */,
 				09AB7BF42B11DB0C0073EAD5 /* ButtonStyle + .swift in Sources */,
+				09AB7BFD2B12F2910073EAD5 /* GrayTextField.swift in Sources */,
 				09AB7BEE2B11D3110073EAD5 /* CustomButtons.swift in Sources */,
+				09AB7C012B12FF780073EAD5 /* VerificationView.swift in Sources */,
 				09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */,
 				09AB7BF72B11E9C10073EAD5 /* LoginDialog.swift in Sources */,
 			);

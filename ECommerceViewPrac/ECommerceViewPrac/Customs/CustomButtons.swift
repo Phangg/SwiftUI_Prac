@@ -10,7 +10,6 @@ import SwiftUI
 struct CustomButtons: View {
     var body: some View {
         VStack {
-            // Filled Button
             Button {
                 print("Filled Button Tapped")
             } label: {
@@ -18,7 +17,6 @@ struct CustomButtons: View {
                     .modifier(InButton())
             }
             .buttonStyle(.filled(with: Color.mainBlue))
-            // Filled Button
             Button {
                 print("Filled Button Tapped")
             } label: {
@@ -26,7 +24,6 @@ struct CustomButtons: View {
                     .modifier(InButton())
             }
             .buttonStyle(.filled(with: Color.darkGray))
-            // Ghost Button
             Button {
                 print("Ghost Button Tapped")
             } label: {
