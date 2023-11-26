@@ -31,7 +31,8 @@ struct LoginView: View {
                         .modifier(BodyText(fontColor: .navyBlack))
                         .padding(.bottom, 10)
                     GrayTextField(text: $emailText,
-                                  placeHolder: "이메일 혹은 핸드폰 번호를 입력해주세요")
+                                  placeHolder: "이메일 혹은 핸드폰 번호를 입력해주세요",
+                                  textFieldType: .normal)
                         .padding(.bottom, 30)
                     Text("Password")
                         .modifier(BodyText(fontColor: .navyBlack))

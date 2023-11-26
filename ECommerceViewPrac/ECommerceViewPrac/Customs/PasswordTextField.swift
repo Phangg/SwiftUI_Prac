@@ -31,7 +31,7 @@ struct PasswordTextField: View {
                     .foregroundStyle(Color.darkGray)
             }
         }
-        .modifier(CustomTextField())
+        .modifier(CustomTextField(textFieldType: .normal))
     }
 }
 

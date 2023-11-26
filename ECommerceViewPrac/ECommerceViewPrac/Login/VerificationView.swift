@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct VerificationView: View {
-    private var code: [Int] = []
+    @State private var code: [String] = ["", "", "", ""]
     private var clickableNextButton: Bool {
-        !code.isEmpty
+        !code.contains("")
     }
     
     var body: some View {
@@ -19,7 +19,7 @@ struct VerificationView: View {
             Text("Verification")
                 .modifier(LargeText())
                 .padding(.bottom, 20)
-            Text("번호로 인증 코드를 보냈어요! \n인증 번호를 확인해주세요")
+            Text("번호로 인증 코드를 보냈어요! \n인증 번호를 입력해주세요")
                 .modifier(BodyText(fontColor: .darkGray))
                 .padding(.bottom, 70)
             HStack {
@@ -36,28 +36,12 @@ struct VerificationView: View {
             .padding(.bottom, 20)
             Grid(horizontalSpacing: 10) {
                 GridRow {
-                    ForEach(1...4, id: \.self) { num in
-                        Rectangle()
-                            .foregroundColor(.clear)
-                            .frame(minWidth: 75, maxWidth: .infinity, maxHeight: 50)
-                            .background(Color.offGray)
-                            .cornerRadius(10)
-                            .overlay {
-                                Text("\(num)")
-                                    .modifier(BodyText(fontColor: .navyBlack))
-                            }
+                    ForEach(0..<4, id: \.self) { idx in
+                        GrayTextField(text: $code[idx],
+                                      placeHolder: "",
+                                      textFieldType: .large)
+                        .keyboardType(.numberPad)
                     }
-//                    ForEach(code, id: \.self) { codeNum in
-//                        Rectangle()
-//                            .foregroundColor(.clear)
-//                            .frame(minWidth: 75, maxWidth: .infinity, maxHeight: 50)
-//                            .background(Color.offGray)
-//                            .cornerRadius(10)
-//                            .overlay {
-//                                Text("\(codeNum)")
-//                                    .modifier(BodyText(fontColor: .navyBlack))
-//                            }
-//                    }
                 }
             }
             .padding(.bottom, 20)

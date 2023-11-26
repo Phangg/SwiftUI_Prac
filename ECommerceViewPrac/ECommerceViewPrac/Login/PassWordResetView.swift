@@ -26,8 +26,9 @@ struct PassWordResetView: View {
                 .modifier(BodyText(fontColor: .navyBlack))
                 .padding(.bottom, 10)
             GrayTextField(text: $emailText,
-                          placeHolder: "이메일 혹은 핸드폰 번호를 입력해주세요")
-            .padding(.bottom, 60)
+                          placeHolder: "이메일 혹은 핸드폰 번호를 입력해주세요",
+                          textFieldType: .normal)
+                .padding(.bottom, 60)
             Button {
                 // TODO: next view 이동 ( 가입된 아이디 인지 확인 - alert )
             } label: {
