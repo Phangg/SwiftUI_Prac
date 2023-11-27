@@ -1,5 +1,5 @@
 //
-//  CustomTextFields.swift
+//  CustomTextFieldType.swift
 //  ECommerceViewPrac
 //
 //  Created by phang on 11/26/23.
@@ -13,7 +13,7 @@ enum TextFieldType {
     case large
 }
 
-// MARK: - CustomTextField
+// MARK: - Modifier
 struct CustomTextField: ViewModifier {
     let textFieldType: TextFieldType
     
