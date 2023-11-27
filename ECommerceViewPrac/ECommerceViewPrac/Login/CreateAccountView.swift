@@ -32,6 +32,7 @@ struct CreateAccountView: View {
                 Spacer()
                 Button {
                     // TODO: next view 이동 ( 가입된 아이디 인지 확인 - alert )
+                    // next view == VerificationView
                 } label: {
                     Text("다음")
                         .modifier(InButton())

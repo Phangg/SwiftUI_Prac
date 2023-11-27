@@ -13,7 +13,7 @@ struct LoginView: View {
     @State var passwordText = ""
     @State var showPassword = false
     private var clickableLoginButton: Bool {
-        !self.emailText.isEmpty && !self.passwordText.isEmpty
+        !emailText.isEmpty && !passwordText.isEmpty
     }
     
     var body: some View {
