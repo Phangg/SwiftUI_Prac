@@ -1,5 +1,5 @@
 //
-//  LoginDialog.swift
+//  CustomLoginDialog.swift
 //  ECommerceViewPrac
 //
 //  Created by phang on 11/25/23.

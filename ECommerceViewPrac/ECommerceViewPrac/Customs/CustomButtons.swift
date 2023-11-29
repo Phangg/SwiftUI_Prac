@@ -13,6 +13,18 @@ struct CustomButtons: View {
             Button {
                 print("Filled Button Tapped")
             } label: {
+                HStack {
+                    Text("Added")
+                        .modifier(InButton())
+                    Spacer()
+                    Image(systemName: "heart.fill")
+                }
+            }
+            .buttonStyle(.filled(with: Color.red))
+            .padding(.horizontal, 120)
+            Button {
+                print("Filled Button Tapped")
+            } label: {
                 Text("Filled Button")
                     .modifier(InButton())
             }
@@ -50,7 +62,7 @@ struct FilledButton: ButtonStyle {
                     .stroke(color, lineWidth: 1)
             )
             .foregroundStyle(Color.white)
-            .cornerRadius(10)
+            .clipShape(.rect(cornerRadius: 10))
             .opacity(configuration.isPressed ? 0.6 : 1.0)
     }
 }
@@ -64,10 +76,11 @@ struct GhostButton: ButtonStyle {
             .padding(.horizontal, 20)
             .background(
               RoundedRectangle(cornerRadius: 10)
+                .fill(Color.white)
                 .stroke(Color.navyBlack, lineWidth: 1)
             )
             .foregroundStyle(Color.navyBlack)
-            .cornerRadius(10)
+            .clipShape(.rect(cornerRadius: 10))
             .opacity(configuration.isPressed ? 0.6 : 1.0)
     }
 }

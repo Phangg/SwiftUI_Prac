@@ -25,14 +25,14 @@ struct CustomTextField: ViewModifier {
                 .padding(.vertical, 16)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(Color.offGray)
-                .cornerRadius(10)
+                .clipShape(.rect(cornerRadius: 10))
         case .large:
             return content
                 .padding(.horizontal, 20)
                 .padding(.vertical, 16)
                 .frame(minWidth: 75, maxWidth: .infinity, maxHeight: 60, alignment: .center)
                 .background(Color.offGray)
-                .cornerRadius(10)
+                .clipShape(.rect(cornerRadius: 10))
         }
     }
 }

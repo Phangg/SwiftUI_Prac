@@ -10,8 +10,8 @@ import SwiftUI
 // MARK: - 커스텀 텍스트 필드
 struct GrayTextField: View {
     @Binding var text: String
-    var placeHolder: String
-    var textFieldType: TextFieldType
+    let placeHolder: String
+    let textFieldType: TextFieldType
     
     var body: some View {
         HStack {

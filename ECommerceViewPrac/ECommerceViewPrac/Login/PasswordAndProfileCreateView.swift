@@ -41,9 +41,9 @@ struct PasswordAndProfileCreateView: View {
             .padding(.bottom, 10)
             HStack {
                 Image(systemName: "info.circle")
-                    .modifier(BodyText(fontColor: isPossiblePassword ? .clear : .red))
+                    .modifier(BodyText(fontColor: isPossiblePassword ? .clear : .darkGray))
                 Text("8자 이상 - 숫자 1개, 특수문자 1개 포함")
-                    .modifier(BodyText(fontColor: isPossiblePassword ? .clear : .red))
+                    .modifier(BodyText(fontColor: isPossiblePassword ? .clear : .darkGray))
             }
             Spacer()
             Button {
