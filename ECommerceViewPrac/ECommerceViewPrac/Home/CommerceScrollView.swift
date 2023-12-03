@@ -13,14 +13,12 @@ struct CommerceScrollView: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack(spacing: 10) {
-                CustomCommerceGridCell(geo: geo,
-                                       imageString: "commerce01",
-                                       eventName: "오픈 이벤트 \n배송비 무료!",
-                                       deadline: "2024년 1월까지")
-                CustomCommerceGridCell(geo: geo,
-                                       imageString: "commerce02",
-                                       eventName: "블랙 프라이데이 \n70% 할인",
-                                       deadline: "2023년 12월까지")
+                ForEach(CommerceData.commerceDummyData) { data in
+                    CustomCommerceGridCell(geo: geo,
+                                           imageString: data.image,
+                                           eventName: data.name,
+                                           deadline: data.deadline)
+                }
             }
             .padding(.horizontal, 25)
             .frame(maxHeight: geo.size.height * 0.2)

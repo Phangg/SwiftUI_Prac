@@ -31,6 +31,8 @@
 		09AB7C472B1B40920073EAD5 /* CustomCommerceGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C462B1B40920073EAD5 /* CustomCommerceGridCell.swift */; };
 		09AB7C492B1C59A70073EAD5 /* CategoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */; };
 		09AB7C4B2B1C5A190073EAD5 /* CustomCategoryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4A2B1C5A190073EAD5 /* CustomCategoryGridCell.swift */; };
+		09AB7C4E2B1C5FC30073EAD5 /* CommerceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */; };
+		09AB7C502B1C60300073EAD5 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		09AB7C462B1B40920073EAD5 /* CustomCommerceGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCommerceGridCell.swift; sourceTree = "<group>"; };
 		09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScrollView.swift; sourceTree = "<group>"; };
 		09AB7C4A2B1C5A190073EAD5 /* CustomCategoryGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoryGridCell.swift; sourceTree = "<group>"; };
+		09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceData.swift; sourceTree = "<group>"; };
+		09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +151,18 @@
 				09AB7C112B1771620073EAD5 /* HomeView.swift */,
 				09AB7C3B2B18C4490073EAD5 /* CommerceScrollView.swift */,
 				09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */,
+				09AB7C4C2B1C5FB40073EAD5 /* Data */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		09AB7C4C2B1C5FB40073EAD5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */,
+				09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,9 +240,11 @@
 				09AB7C4B2B1C5A190073EAD5 /* CustomCategoryGridCell.swift in Sources */,
 				09AB7C0F2B14CC940073EAD5 /* CustomProductGridCell.swift in Sources */,
 				09AB7BE12B11D08F0073EAD5 /* LoginView.swift in Sources */,
+				09AB7C4E2B1C5FC30073EAD5 /* CommerceData.swift in Sources */,
 				09AB7BF92B124B940073EAD5 /* CustomTextFieldType.swift in Sources */,
 				09AB7C0D2B1436EA0073EAD5 /* Regex.swift in Sources */,
 				09AB7C492B1C59A70073EAD5 /* CategoriesScrollView.swift in Sources */,
+				09AB7C502B1C60300073EAD5 /* CategoryData.swift in Sources */,
 				09AB7BDF2B11D08F0073EAD5 /* ECommerceViewPracApp.swift in Sources */,
 				09AB7BFB2B12EFC10073EAD5 /* PassWordResetView.swift in Sources */,
 				09AB7C472B1B40920073EAD5 /* CustomCommerceGridCell.swift in Sources */,

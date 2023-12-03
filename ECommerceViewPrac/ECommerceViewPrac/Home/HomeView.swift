@@ -18,7 +18,7 @@ struct HomeView: View {
                         GrayTextField(text: $searchText, placeHolder: "Search Product Name", textFieldType: .normal)
                             .padding(.horizontal, 25)
                         CommerceScrollView(geo: geo)
-                        Text("ssadasf")
+                        CategoriesScrollView()
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
