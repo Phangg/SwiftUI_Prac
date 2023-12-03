@@ -22,6 +22,7 @@ struct CommerceScrollView: View {
             }
             .padding(.horizontal, 25)
             .frame(maxHeight: geo.size.height * 0.2)
+            .padding(.vertical, 20)
         }
         .scrollIndicators(.hidden)
         .scrollTargetBehavior(.paging)

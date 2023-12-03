@@ -43,7 +43,7 @@ struct CustomCommerceGridCell: View {
         }
         .frame(minWidth: geo.size.width - 50, maxHeight: geo.size.height * 0.2)
         .clipShape(.rect(cornerRadius: 10))
-        .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 5)
+        .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 5)
     }
 }
 

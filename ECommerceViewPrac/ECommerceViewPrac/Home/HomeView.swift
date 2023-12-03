@@ -14,11 +14,24 @@ struct HomeView: View {
         GeometryReader { geo in
             NavigationStack {
                 ScrollView {
-                    VStack(spacing: 20) {
-                        GrayTextField(text: $searchText, placeHolder: "Search Product Name", textFieldType: .normal)
-                            .padding(.horizontal, 25)
-                        CommerceScrollView(geo: geo)
-                        CategoriesScrollView()
+                    VStack(spacing: 0) {
+                        VStack(spacing: 5) {
+                            GrayTextField(text: $searchText,
+                                          placeHolder: "Search Product Name",
+                                          textFieldType: .normal)
+                                .padding(.horizontal, 25)
+                                .padding(.top, -25)
+                            CommerceScrollView(geo: geo)
+                            CategoriesScrollView()
+                                .padding(.bottom, 20)
+                        }
+                        VStack {
+                        }
+                        .background(Color.offGray)
+                        .clipShape(.rect(topLeadingRadius: 10,
+                                         bottomLeadingRadius: 0,
+                                         bottomTrailingRadius: 0,
+                                         topTrailingRadius: 10))
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
