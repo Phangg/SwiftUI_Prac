@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CommerceData: Identifiable {
-    var id = UUID()
-    var image: String
-    var name: String
-    var deadline: String
+    let id = UUID()
+    let image: String
+    let name: String
+    let deadline: String
     
     static let commerceDummyData: [CommerceData] = [
         CommerceData(image: "commerce01", name: "오픈 이벤트 \n배송비 무료!", deadline: "2024년 1월까지"),

@@ -7,17 +7,22 @@
 
 import SwiftUI
 
-struct ProductGridCell: View {
+struct CustomProductGridCell: View {
     let isSale: Bool
-    let itemOriginalPrice: Int
+    let discountRate: Double
+    let itemImage: String
     let itemName: String
     let itemPrice: Int
     let itemScore: Double
     let itemReviewCount: Int
+    private var salePrice: Int {
+        guard isSale else { return 0 }
+        return itemPrice - Int(Double(itemPrice) * discountRate)
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
-            Image("ecommerce01")
+            Image(itemImage)
 //                    .resizable()
 //                    .aspectRatio(contentMode: .fit)
                 .overlay(alignment: .bottomLeading) {
@@ -29,10 +34,13 @@ struct ProductGridCell: View {
             VStack(alignment: .leading) {
                 Text(itemName)
                     .modifier(MediumSize14Text(fontColor: .navyBlack))
-                Text("\(itemPrice)원")
-                    .modifier(MediumSize14Text(fontColor: .red))
-                if isSale {
-                    Text("\(itemOriginalPrice)원")
+                if !isSale {
+                    Text("\(itemPrice)원")
+                        .modifier(MediumSize14Text(fontColor: .red))
+                } else {
+                    Text("\(salePrice)원")
+                        .modifier(MediumSize14Text(fontColor: .red))
+                    Text("\(itemPrice)원")
                         .modifier(Size14Text(fontColor: .halfGray))
                         .strikethrough(true, color: Color.halfGray)
                 }
@@ -73,10 +81,11 @@ struct ProductGridCell: View {
         Color.black
             .opacity(0.2)
             .ignoresSafeArea()
-        ProductGridCell(
+        CustomProductGridCell(
             isSale: true,
 //            isSale: false,
-            itemOriginalPrice: 200_000,
+            discountRate: 0.3333333333333333,
+            itemImage: "ecommerce01",
             itemName: "TMA-2 HD Wireless",
             itemPrice: 150_000,
             itemScore: 4.6,

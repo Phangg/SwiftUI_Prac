@@ -15,7 +15,7 @@ struct HomeView: View {
             NavigationStack {
                 ScrollView {
                     VStack(spacing: 0) {
-                        VStack(spacing: 5) {
+                        VStack(spacing: 0) {
                             GrayTextField(text: $searchText,
                                           placeHolder: "Search Product Name",
                                           textFieldType: .normal)
@@ -25,7 +25,19 @@ struct HomeView: View {
                             CategoriesScrollView()
                                 .padding(.bottom, 20)
                         }
-                        VStack {
+                        VStack(spacing: 20) {
+                            ProductScrollView(title: "Featured Product",
+                                              dummyData: ProductData.featuredProductDummyData)
+                                .padding(.top, 20)
+                            ProductScrollView(title: "Best Sellers",
+                                              dummyData: ProductData.bestSellersDummyData)
+                            ProductScrollView(title: "New Arrivals",
+                                              dummyData: ProductData.newArrivalsDummyData)
+                            ProductScrollView(title: "Top Rated Product",
+                                              dummyData: ProductData.topRatedProductDummyData)
+                            ProductScrollView(title: "Special Offers",
+                                              dummyData: ProductData.specialOffersDummyData)
+                            
                         }
                         .background(Color.offGray)
                         .clipShape(.rect(topLeadingRadius: 10,

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CategoryData: Identifiable {
-    var id = UUID()
-    var image: String
-    var name: String
-    var bgColor: Color
-    var iconColor: Color
+    let id = UUID()
+    let image: String
+    let name: String
+    let bgColor: Color
+    let iconColor: Color
     
     static let categoryDummyData: [CategoryData] = [
         CategoryData(image: "Foods", name: "Foods", bgColor: .offGreen, iconColor: .customGreen),

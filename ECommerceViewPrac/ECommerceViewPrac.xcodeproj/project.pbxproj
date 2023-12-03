@@ -33,6 +33,8 @@
 		09AB7C4B2B1C5A190073EAD5 /* CustomCategoryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4A2B1C5A190073EAD5 /* CustomCategoryGridCell.swift */; };
 		09AB7C4E2B1C5FC30073EAD5 /* CommerceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */; };
 		09AB7C502B1C60300073EAD5 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */; };
+		09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */; };
+		09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C532B1C6C410073EAD5 /* ProductData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		09AB7C4A2B1C5A190073EAD5 /* CustomCategoryGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoryGridCell.swift; sourceTree = "<group>"; };
 		09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceData.swift; sourceTree = "<group>"; };
 		09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScrollView.swift; sourceTree = "<group>"; };
+		09AB7C532B1C6C410073EAD5 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 				09AB7C112B1771620073EAD5 /* HomeView.swift */,
 				09AB7C3B2B18C4490073EAD5 /* CommerceScrollView.swift */,
 				09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */,
+				09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */,
 				09AB7C4C2B1C5FB40073EAD5 /* Data */,
 			);
 			path = Home;
@@ -161,6 +166,7 @@
 			children = (
 				09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */,
 				09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */,
+				09AB7C532B1C6C410073EAD5 /* ProductData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				09AB7BEE2B11D3110073EAD5 /* CustomButtons.swift in Sources */,
 				09AB7C012B12FF780073EAD5 /* VerificationView.swift in Sources */,
 				09AB7C3C2B18C4490073EAD5 /* CommerceScrollView.swift in Sources */,
+				09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */,
+				09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */,
 				09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */,
 				09AB7BF72B11E9C10073EAD5 /* CustomLoginDialog.swift in Sources */,
 			);
