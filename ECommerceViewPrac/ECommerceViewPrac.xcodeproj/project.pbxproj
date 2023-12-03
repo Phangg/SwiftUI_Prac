@@ -35,6 +35,7 @@
 		09AB7C502B1C60300073EAD5 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */; };
 		09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */; };
 		09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C532B1C6C410073EAD5 /* ProductData.swift */; };
+		09AB7C562B1C96780073EAD5 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C552B1C96780073EAD5 /* BannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScrollView.swift; sourceTree = "<group>"; };
 		09AB7C532B1C6C410073EAD5 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		09AB7C552B1C96780073EAD5 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,6 @@
 				09AB7C132B17746D0073EAD5 /* MainTabView.swift */,
 				09AB7BF52B11E7960073EAD5 /* Login */,
 				09AB7C102B14CCD10073EAD5 /* Home */,
-				09AB7BEC2B11D2FB0073EAD5 /* Customs */,
 				09AB7BE22B11D0910073EAD5 /* Assets.xcassets */,
 				09AB7BEF2B11D47F0073EAD5 /* Colors.xcassets */,
 				09AB7BE42B11D0910073EAD5 /* Preview Content */,
@@ -156,7 +157,9 @@
 				09AB7C3B2B18C4490073EAD5 /* CommerceScrollView.swift */,
 				09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */,
 				09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */,
+				09AB7C552B1C96780073EAD5 /* BannerView.swift */,
 				09AB7C4C2B1C5FB40073EAD5 /* Data */,
+				09AB7BEC2B11D2FB0073EAD5 /* Customs */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */,
 				09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */,
 				09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */,
+				09AB7C562B1C96780073EAD5 /* BannerView.swift in Sources */,
 				09AB7BF72B11E9C10073EAD5 /* CustomLoginDialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,15 +29,19 @@ struct HomeView: View {
                             ProductScrollView(title: "Featured Product",
                                               dummyData: ProductData.featuredProductDummyData)
                                 .padding(.top, 20)
+                            BannerView(geo: geo, title: "스피커 연결잭",
+                                       image: "ecommerce03", bgColor: .customLightGreen)
                             ProductScrollView(title: "Best Sellers",
                                               dummyData: ProductData.bestSellersDummyData)
+                            BannerView(geo: geo, title: "무선 헤드셋",
+                                       image: "ecommerce02", bgColor: .mainBlue)
                             ProductScrollView(title: "New Arrivals",
                                               dummyData: ProductData.newArrivalsDummyData)
                             ProductScrollView(title: "Top Rated Product",
                                               dummyData: ProductData.topRatedProductDummyData)
                             ProductScrollView(title: "Special Offers",
                                               dummyData: ProductData.specialOffersDummyData)
-                            
+                                .padding(.bottom, 20)                            
                         }
                         .background(Color.offGray)
                         .clipShape(.rect(topLeadingRadius: 10,
