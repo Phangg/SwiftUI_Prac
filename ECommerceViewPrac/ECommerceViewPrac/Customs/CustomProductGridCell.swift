@@ -16,47 +16,45 @@ struct ProductGridCell: View {
     let itemReviewCount: Int
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .center, spacing: 20) {
-                Image("ecommerce01")
+        VStack(alignment: .center, spacing: 20) {
+            Image("ecommerce01")
 //                    .resizable()
 //                    .aspectRatio(contentMode: .fit)
-                    .overlay(alignment: .bottomLeading) {
-                        if isSale {
-                            Text("SALE")
-                                .modifier(RoundBackgroundText(fontColor: .white, backgroundColor: .red))
-                        }
-                    }
-                VStack(alignment: .leading) {
-                    Text(itemName)
-                        .modifier(MediumSize14Text(fontColor: .navyBlack))
-                    Text("\(itemPrice)원")
-                        .modifier(MediumSize14Text(fontColor: .red))
+                .overlay(alignment: .bottomLeading) {
                     if isSale {
-                        Text("\(itemOriginalPrice)원")
-                            .modifier(Size14Text(fontColor: .halfGray))
-                            .strikethrough(true, color: Color.halfGray)
+                        Text("SALE")
+                            .modifier(RoundBackgroundText(fontColor: .white, backgroundColor: .red))
                     }
-                    HStack(spacing: 0) {
-                        Image("star")
-                            .frame(width: 12, height: 12)
-                            .padding(.trailing, 2)
-                        Text(getFormattedStringNum(itemScore))
-                            .modifier(Size14Text(fontColor: .navyBlack))
-                            .padding(.trailing, 5)
-                        Text("\(itemReviewCount) Reviews")
-                            .modifier(Size14Text(fontColor: .navyBlack))
-                            .padding(.trailing, 10)
-                        Button {
-                            // TODO: 제품 상세 이동
-                        } label: {
-                             Image(systemName: "ellipsis")
-                                .rotationEffect(Angle(degrees: 90))
-                                .foregroundStyle(Color.darkGray)
-                        }
-                    }
-                    .padding(.top, 5)
                 }
+            VStack(alignment: .leading) {
+                Text(itemName)
+                    .modifier(MediumSize14Text(fontColor: .navyBlack))
+                Text("\(itemPrice)원")
+                    .modifier(MediumSize14Text(fontColor: .red))
+                if isSale {
+                    Text("\(itemOriginalPrice)원")
+                        .modifier(Size14Text(fontColor: .halfGray))
+                        .strikethrough(true, color: Color.halfGray)
+                }
+                HStack(spacing: 0) {
+                    Image("star")
+                        .frame(width: 12, height: 12)
+                        .padding(.trailing, 2)
+                    Text(getFormattedStringNum(itemScore))
+                        .modifier(Size14Text(fontColor: .navyBlack))
+                        .padding(.trailing, 5)
+                    Text("\(itemReviewCount) Reviews")
+                        .modifier(Size14Text(fontColor: .navyBlack))
+                        .padding(.trailing, 10)
+                    Button {
+                        // TODO: 제품 상세 이동
+                    } label: {
+                         Image(systemName: "ellipsis")
+                            .rotationEffect(Angle(degrees: 90))
+                            .foregroundStyle(Color.darkGray)
+                    }
+                }
+                .padding(.top, 5)
             }
         }
         .padding(.vertical, 15)

@@ -34,7 +34,7 @@ struct VerificationView: View {
         VStack(alignment: .leading) {
             Spacer()
             Text("Verification")
-                .modifier(LargeText())
+                .modifier(LargeText(fontColor: .navyBlack))
                 .padding(.bottom, 20)
             Text("번호로 인증 코드를 보냈어요! \n인증 번호를 입력해주세요")
                 .modifier(BodyText(fontColor: .darkGray))

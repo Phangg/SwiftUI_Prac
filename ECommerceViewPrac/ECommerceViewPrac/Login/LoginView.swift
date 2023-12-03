@@ -22,7 +22,7 @@ struct LoginView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                     Text("Welcome to \nMega Mall")
-                        .modifier(LargeText())
+                        .modifier(LargeText(fontColor: .navyBlack))
                         .padding(.bottom, 20)
                     Text("로그인을 위해 데이터를 입력해주세요")
                         .modifier(BodyText(fontColor: .darkGray))

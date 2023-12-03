@@ -17,7 +17,7 @@ struct PassWordResetView: View {
         VStack(alignment: .leading) {
             Spacer()
             Text("Reset Password")
-                .modifier(LargeText())
+                .modifier(LargeText(fontColor: .navyBlack))
                 .padding(.bottom, 20)
             Text("계정과 연결된 이메일 / 전화 번호를 \n입력하여 비밀번호를 재설정해주세요")
                 .modifier(BodyText(fontColor: .darkGray))

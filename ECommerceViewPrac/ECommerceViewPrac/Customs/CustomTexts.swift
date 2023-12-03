@@ -13,7 +13,9 @@ struct CustomTexts: View {
             Text("In Button")
                 .modifier(InButton())
             Text("Large Text")
-                .modifier(LargeText())
+                .modifier(LargeText(fontColor: .navyBlack))
+            Text("Bold Size 18 Text")
+                .modifier(BoldSize18Text(fontColor: .navyBlack))
             Text("Body Text")
                 .modifier(BodyText(fontColor: .darkGray))
             Text("Medium Size 14 Text")
@@ -37,11 +39,24 @@ struct InButton: ViewModifier {
 
 // MARK: - Large & Bold
 struct LargeText: ViewModifier {
+    let fontColor: Color
     func body(content: Content) -> some View {
         content
             .font(.largeTitle)
             .fontWeight(.semibold)
-            .foregroundStyle(Color.navyBlack)
+            .foregroundStyle(fontColor)
+            .multilineTextAlignment(.leading)
+    }
+}
+
+// MARK: - Font Size 18 & Bold
+struct BoldSize18Text: ViewModifier {
+    let fontColor: Color
+    func body(content: Content) -> some View {
+        content
+            .font(.system(size: 18))
+            .fontWeight(.bold)
+            .foregroundStyle(fontColor)
             .multilineTextAlignment(.leading)
     }
 }

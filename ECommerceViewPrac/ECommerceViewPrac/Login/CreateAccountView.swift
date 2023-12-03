@@ -17,7 +17,7 @@ struct CreateAccountView: View {
         VStack(alignment: .center) {
             VStack(alignment: .leading) {
                 Text("Create Accout")
-                    .modifier(LargeText())
+                    .modifier(LargeText(fontColor: .navyBlack))
                     .padding(.top, 60)
                     .padding(.bottom, 20)
                 Text("등록한 이메일 혹은 전화번호로 \n인증 번호를 보내드릴 예정이에요")

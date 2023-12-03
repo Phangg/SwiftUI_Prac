@@ -22,7 +22,7 @@ struct PasswordAndProfileCreateView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Profile & Password")
-                .modifier(LargeText())
+                .modifier(LargeText(fontColor: .navyBlack))
                 .padding(.top, 60)
                 .padding(.bottom, 20)
             Text("사용하실 이름과 비밀번호를 등록해주세요")
