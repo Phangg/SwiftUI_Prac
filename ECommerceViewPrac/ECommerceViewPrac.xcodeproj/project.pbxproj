@@ -36,6 +36,8 @@
 		09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */; };
 		09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C532B1C6C410073EAD5 /* ProductData.swift */; };
 		09AB7C562B1C96780073EAD5 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C552B1C96780073EAD5 /* BannerView.swift */; };
+		09AB7C802B1D888A0073EAD5 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C7F2B1D888A0073EAD5 /* NewsView.swift */; };
+		09AB7C822B1D88A60073EAD5 /* CustomNewsGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C812B1D88A60073EAD5 /* CustomNewsGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScrollView.swift; sourceTree = "<group>"; };
 		09AB7C532B1C6C410073EAD5 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
 		09AB7C552B1C96780073EAD5 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		09AB7C7F2B1D888A0073EAD5 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		09AB7C812B1D88A60073EAD5 /* CustomNewsGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNewsGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				09AB7C132B17746D0073EAD5 /* MainTabView.swift */,
 				09AB7BF52B11E7960073EAD5 /* Login */,
 				09AB7C102B14CCD10073EAD5 /* Home */,
+				09AB7BEC2B11D2FB0073EAD5 /* Customs */,
 				09AB7BE22B11D0910073EAD5 /* Assets.xcassets */,
 				09AB7BEF2B11D47F0073EAD5 /* Colors.xcassets */,
 				09AB7BE42B11D0910073EAD5 /* Preview Content */,
@@ -129,6 +134,7 @@
 				09AB7C0E2B14CC940073EAD5 /* CustomProductGridCell.swift */,
 				09AB7C462B1B40920073EAD5 /* CustomCommerceGridCell.swift */,
 				09AB7C4A2B1C5A190073EAD5 /* CustomCategoryGridCell.swift */,
+				09AB7C812B1D88A60073EAD5 /* CustomNewsGridCell.swift */,
 				09AB7BF82B124B940073EAD5 /* CustomTextFieldType.swift */,
 				09AB7BFC2B12F2910073EAD5 /* GrayTextField.swift */,
 				09AB7BFE2B12F6D10073EAD5 /* PasswordTextField.swift */,
@@ -158,8 +164,8 @@
 				09AB7C482B1C59A70073EAD5 /* CategoriesScrollView.swift */,
 				09AB7C512B1C6A710073EAD5 /* ProductScrollView.swift */,
 				09AB7C552B1C96780073EAD5 /* BannerView.swift */,
+				09AB7C7F2B1D888A0073EAD5 /* NewsView.swift */,
 				09AB7C4C2B1C5FB40073EAD5 /* Data */,
-				09AB7BEC2B11D2FB0073EAD5 /* Customs */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AB7BFF2B12F6D10073EAD5 /* PasswordTextField.swift in Sources */,
+				09AB7C822B1D88A60073EAD5 /* CustomNewsGridCell.swift in Sources */,
 				09AB7C4B2B1C5A190073EAD5 /* CustomCategoryGridCell.swift in Sources */,
 				09AB7C0F2B14CC940073EAD5 /* CustomProductGridCell.swift in Sources */,
 				09AB7BE12B11D08F0073EAD5 /* LoginView.swift in Sources */,
@@ -266,6 +273,7 @@
 				09AB7BEE2B11D3110073EAD5 /* CustomButtons.swift in Sources */,
 				09AB7C012B12FF780073EAD5 /* VerificationView.swift in Sources */,
 				09AB7C3C2B18C4490073EAD5 /* CommerceScrollView.swift in Sources */,
+				09AB7C802B1D888A0073EAD5 /* NewsView.swift in Sources */,
 				09AB7C542B1C6C410073EAD5 /* ProductData.swift in Sources */,
 				09AB7C522B1C6A710073EAD5 /* ProductScrollView.swift in Sources */,
 				09AB7BF22B11D6CB0073EAD5 /* CustomTexts.swift in Sources */,
