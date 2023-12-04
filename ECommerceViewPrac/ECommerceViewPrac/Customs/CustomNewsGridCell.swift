@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct CustomNewsGridCell: View {
+    let title: String
+    let subTitle: String
+    let dateString: String
+    let image: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top, spacing: 20) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(title)
+                    .modifier(BodyText(fontColor: .navyBlack))
+                    .fontWeight(.medium)
+                Text(subTitle)
+                    .modifier(Size14Text(fontColor: .navyBlack))
+                    .lineLimit(1)
+                Text(dateString)
+                    .modifier(Size14Text(fontColor: .darkGray))
+            }
+            Image(image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 80, height: 80)
+                .clipShape(.rect(cornerRadius: 10))
+        }
+        .frame(minWidth: 0, maxWidth: .infinity)
     }
 }
 
@@ -18,6 +40,10 @@ struct CustomNewsGridCell: View {
         Color.black
             .opacity(0.2)
             .ignoresSafeArea()
-        CustomNewsGridCell()
+        CustomNewsGridCell(title: "Philosophy That Addresses Topics Such As Goodness",
+                           subTitle: "Agar tetap kinclong, bodi motor ten...",
+                           dateString: "13 Jan 2021",
+                           image: "news01")
+            .background(Color.white)
     }
 }

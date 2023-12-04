@@ -77,7 +77,7 @@ struct GhostButton: ButtonStyle {
             .background(
               RoundedRectangle(cornerRadius: 10)
                 .fill(Color.white)
-                .stroke(Color.navyBlack, lineWidth: 1)
+                .stroke(Color.navyBlack, lineWidth: 1.5)
             )
             .foregroundStyle(Color.navyBlack)
             .clipShape(.rect(cornerRadius: 10))

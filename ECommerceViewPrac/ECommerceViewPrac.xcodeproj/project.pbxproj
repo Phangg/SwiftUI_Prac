@@ -38,6 +38,7 @@
 		09AB7C562B1C96780073EAD5 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C552B1C96780073EAD5 /* BannerView.swift */; };
 		09AB7C802B1D888A0073EAD5 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C7F2B1D888A0073EAD5 /* NewsView.swift */; };
 		09AB7C822B1D88A60073EAD5 /* CustomNewsGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C812B1D88A60073EAD5 /* CustomNewsGridCell.swift */; };
+		09AB7CA02B1E2BD60073EAD5 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB7C9F2B1E2BD60073EAD5 /* NewsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		09AB7C552B1C96780073EAD5 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		09AB7C7F2B1D888A0073EAD5 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		09AB7C812B1D88A60073EAD5 /* CustomNewsGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNewsGridCell.swift; sourceTree = "<group>"; };
+		09AB7C9F2B1E2BD60073EAD5 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				09AB7C4D2B1C5FC30073EAD5 /* CommerceData.swift */,
 				09AB7C4F2B1C60300073EAD5 /* CategoryData.swift */,
 				09AB7C532B1C6C410073EAD5 /* ProductData.swift */,
+				09AB7C9F2B1E2BD60073EAD5 /* NewsData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				09AB7C0D2B1436EA0073EAD5 /* Regex.swift in Sources */,
 				09AB7C492B1C59A70073EAD5 /* CategoriesScrollView.swift in Sources */,
 				09AB7C502B1C60300073EAD5 /* CategoryData.swift in Sources */,
+				09AB7CA02B1E2BD60073EAD5 /* NewsData.swift in Sources */,
 				09AB7BDF2B11D08F0073EAD5 /* ECommerceViewPracApp.swift in Sources */,
 				09AB7BFB2B12EFC10073EAD5 /* PassWordResetView.swift in Sources */,
 				09AB7C472B1B40920073EAD5 /* CustomCommerceGridCell.swift in Sources */,

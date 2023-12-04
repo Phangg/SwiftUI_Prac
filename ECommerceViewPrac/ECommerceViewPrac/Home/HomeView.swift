@@ -48,6 +48,7 @@ struct HomeView: View {
                                          bottomLeadingRadius: 0,
                                          bottomTrailingRadius: 0,
                                          topTrailingRadius: 10))
+                        NewsView(dummyData: NewsData.newsDummyData)
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
