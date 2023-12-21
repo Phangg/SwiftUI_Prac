@@ -20,12 +20,13 @@ struct CommerceScrollView: View {
                                            deadline: data.deadline)
                 }
             }
+            .scrollTargetLayout()
             .padding(.horizontal, 25)
             .frame(maxHeight: geo.size.height * 0.2)
             .padding(.vertical, 20)
         }
         .scrollIndicators(.hidden)
-        .scrollTargetBehavior(.paging)
+        .scrollTargetBehavior(.viewAligned(limitBehavior: .always))
     }
 }
 

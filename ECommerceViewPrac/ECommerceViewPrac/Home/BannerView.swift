@@ -17,10 +17,10 @@ struct BannerView: View {
         ZStack {
             Rectangle()
                 .fill(bgColor)
-            Button {
-                // TODO: 이동
-            } label: {
-                HStack(alignment: .center) {
+            HStack(alignment: .center) {
+                Button {
+                    // TODO: 이동
+                } label: {
                     VStack(alignment: .leading, spacing: 10) {
                         Text(title)
                             .modifier(BoldSize18Text(fontColor: .white))
@@ -32,10 +32,10 @@ struct BannerView: View {
                                 .foregroundStyle(Color.white)
                         }
                     }
-                    Image(image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
                 }
+                Image(image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
             }
         }
         .frame(maxHeight: geo.size.height * 0.2)
