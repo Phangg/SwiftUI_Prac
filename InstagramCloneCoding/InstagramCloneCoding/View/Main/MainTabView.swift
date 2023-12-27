@@ -13,22 +13,27 @@ struct MainTabView: View {
             FeedView()
                 .tabItem {
                     Image(systemName: "house")
+                        .environment(\.symbolVariants, .none)
                 }
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
+                        .environment(\.symbolVariants, .none)
                 }
             UploadPostView()
                 .tabItem {
                     Image(systemName: "plus.square")
+                        .environment(\.symbolVariants, .none)
                 }
             NotificationsView()
                 .tabItem {
                     Image(systemName: "heart")
+                        .environment(\.symbolVariants, .none)
                 }
             ProfileView()
                 .tabItem {
                     Image(systemName: "person")
+                        .environment(\.symbolVariants, .none)
                 }
         }
         .tint(.black)
