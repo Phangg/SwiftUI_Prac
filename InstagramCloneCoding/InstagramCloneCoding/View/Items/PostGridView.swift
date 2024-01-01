@@ -14,12 +14,16 @@ struct PostGridView: View {
         GeometryReader { geo in
             LazyVGrid(columns: items, spacing: 2) {
                 ForEach(0..<10) { _ in
-                    Image("cat")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geo.size.width / CGFloat(items.count),
-                               height: geo.size.width / CGFloat(items.count))
-                        .clipped()
+                    NavigationLink {
+                        FeedView()
+                    } label: {
+                        Image("cat")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: geo.size.width / CGFloat(items.count),
+                                   height: geo.size.width / CGFloat(items.count))
+                            .clipped()
+                    }
                 }
             }
         }
