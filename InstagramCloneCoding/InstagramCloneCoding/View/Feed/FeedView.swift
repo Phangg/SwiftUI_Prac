@@ -18,8 +18,6 @@ struct FeedView: View {
             .padding(.top)
         }
 //        .scrollIndicators(.hidden)
-        .navigationTitle("Home")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
