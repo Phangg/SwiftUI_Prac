@@ -13,6 +13,11 @@
 		0946DBE72B4301F6004972AB /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0946DBE62B4301F6004972AB /* UserListView.swift */; };
 		0946DBE92B4307A9004972AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0946DBE82B4307A9004972AB /* Extensions.swift */; };
 		0946DBEB2B4309A9004972AB /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0946DBEA2B4309A9004972AB /* NotificationCell.swift */; };
+		099427F22B4E7849003447CC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099427F12B4E7849003447CC /* LoginView.swift */; };
+		099427F62B4E786B003447CC /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099427F52B4E786B003447CC /* ResetPasswordView.swift */; };
+		099427F82B4E7BB7003447CC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099427F72B4E7BB7003447CC /* CustomTextField.swift */; };
+		099427FA2B4E7EE2003447CC /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099427F92B4E7EE2003447CC /* CustomSecureField.swift */; };
+		099427FC2B4E83B2003447CC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099427FB2B4E83B2003447CC /* RegistrationView.swift */; };
 		09DD09DF2B3C680900E5416C /* InstagramCloneCodingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD09DE2B3C680900E5416C /* InstagramCloneCodingApp.swift */; };
 		09DD09E12B3C680900E5416C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DD09E02B3C680900E5416C /* ContentView.swift */; };
 		09DD09E32B3C680B00E5416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DD09E22B3C680B00E5416C /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 		0946DBE62B4301F6004972AB /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		0946DBE82B4307A9004972AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0946DBEA2B4309A9004972AB /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		099427F12B4E7849003447CC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		099427F52B4E786B003447CC /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		099427F72B4E7BB7003447CC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		099427F92B4E7EE2003447CC /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		099427FB2B4E83B2003447CC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		09DD09DB2B3C680900E5416C /* InstagramCloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DD09DE2B3C680900E5416C /* InstagramCloneCodingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneCodingApp.swift; sourceTree = "<group>"; };
 		09DD09E02B3C680900E5416C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,9 +96,9 @@
 				09DD09DE2B3C680900E5416C /* InstagramCloneCodingApp.swift */,
 				09DD09ED2B3C697000E5416C /* View */,
 				09DD09EE2B3C697400E5416C /* ViewModel */,
+				09DD09EC2B3C696A00E5416C /* Model */,
 				09DD09EF2B3C697F00E5416C /* API */,
 				09DD09F02B3C698500E5416C /* Utils */,
-				09DD09EC2B3C696A00E5416C /* Model */,
 				09DD09E22B3C680B00E5416C /* Assets.xcassets */,
 				09DD09E42B3C680B00E5416C /* Preview Content */,
 			);
@@ -148,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				0946DBE82B4307A9004972AB /* Extensions.swift */,
+				099427F72B4E7BB7003447CC /* CustomTextField.swift */,
+				099427F92B4E7EE2003447CC /* CustomSecureField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,6 +229,9 @@
 		09DD09F82B3C6A0800E5416C /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				099427F12B4E7849003447CC /* LoginView.swift */,
+				099427FB2B4E83B2003447CC /* RegistrationView.swift */,
+				099427F52B4E786B003447CC /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -331,7 +346,9 @@
 			files = (
 				09DD0A032B3C6B8B00E5416C /* SearchView.swift in Sources */,
 				09DD0A012B3C6B6400E5416C /* FeedView.swift in Sources */,
+				099427FC2B4E83B2003447CC /* RegistrationView.swift in Sources */,
 				0946DBE32B42FC90004972AB /* PostGridView.swift in Sources */,
+				099427F62B4E786B003447CC /* ResetPasswordView.swift in Sources */,
 				09DD09E12B3C680900E5416C /* ContentView.swift in Sources */,
 				09DD09DF2B3C680900E5416C /* InstagramCloneCodingApp.swift in Sources */,
 				09DD09FF2B3C6B2900E5416C /* MainTabView.swift in Sources */,
@@ -340,11 +357,14 @@
 				09DD0A072B3C6BAC00E5416C /* ProfileView.swift in Sources */,
 				09F467A72B43177400C25313 /* UserStatView.swift in Sources */,
 				0946DBE52B4301E7004972AB /* UserCell.swift in Sources */,
+				099427F82B4E7BB7003447CC /* CustomTextField.swift in Sources */,
 				0946DBE12B42F546004972AB /* SearchBar.swift in Sources */,
 				09DD0A052B3C6BA200E5416C /* NotificationsView.swift in Sources */,
 				09DD0A0B2B3C728500E5416C /* FeedCell.swift in Sources */,
 				09F467A92B43192600C25313 /* ProfileActionButtonView.swift in Sources */,
 				0946DBE72B4301F6004972AB /* UserListView.swift in Sources */,
+				099427F22B4E7849003447CC /* LoginView.swift in Sources */,
+				099427FA2B4E7EE2003447CC /* CustomSecureField.swift in Sources */,
 				0946DBEB2B4309A9004972AB /* NotificationCell.swift in Sources */,
 				0946DBE92B4307A9004972AB /* Extensions.swift in Sources */,
 			);
