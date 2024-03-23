@@ -17,13 +17,11 @@ struct SwiftDataService {
     var fetch: () throws -> [Item]
     var add: (Item) throws -> Void
     var delete: (Item) throws -> Void
-    var save: () throws -> Void
     
     enum SwiftDataError: Error {
         case fetchError
         case addError
         case deleteError
-        case saveError
     }
 }
 
@@ -55,15 +53,6 @@ extension SwiftDataService: DependencyKey {
                 itemContext.delete(item)
             } catch {
                 throw SwiftDataError.deleteError
-            }
-        },
-        save: {
-            do {
-                @Dependency(\.databaseService.context) var context
-                let itemContext = try context()
-                try itemContext.save()
-            } catch {
-                throw SwiftDataError.saveError
             }
         }
     )

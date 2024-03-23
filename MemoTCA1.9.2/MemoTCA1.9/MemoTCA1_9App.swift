@@ -22,6 +22,7 @@ struct MemoTCA1_9App: App {
         WindowGroup {
             MainView(store: MemoTCA1_9App.store)
         }
+        // SwiftData - Item 모델
         .modelContainer(for: Item.self)
     }
 }

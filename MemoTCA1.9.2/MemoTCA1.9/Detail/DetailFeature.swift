@@ -24,7 +24,7 @@ struct DetailFeature {
     
     enum Action {
         case alert(PresentationAction<Alert>)
-        case dataToImage([Data])
+        case dataToImage
         case delegate(Delegate)
         case deleteButtonTapped
         case editButtonTapped
@@ -60,10 +60,10 @@ struct DetailFeature {
             case .alert:
                 return .none
             // item 의 imagesData -> [UIImage]
-            case let .dataToImage(imagesData):
-                return .run { @MainActor send in
+            case .dataToImage:
+                return .run { [imagesData = state.item.imagesData] send in
                     let uiImages = imageService.convertDataToUIImage(imagesData)
-                    send(.setUIImages(uiImages))
+                    await send(.setUIImages(uiImages))
                 }
             //
             case .delegate:
