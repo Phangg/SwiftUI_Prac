@@ -20,6 +20,7 @@ struct AddItemView: View {
     var body: some View {
         GeometryReader { geo in
             let size = geo.size
+            let maxWidth = size.width - 40
             // View 시작
             VStack(alignment: .center, spacing: 20) {
                 // 사진 선택된 경우, 보여줄 공간
@@ -40,7 +41,7 @@ struct AddItemView: View {
                                     Image(uiImage: uiImage)
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
-                                        .frame(width: size.width - 40,
+                                        .frame(width: maxWidth,
                                                height: size.height / 3 )
                                         .clipped()
                                         .tag(index)
@@ -80,6 +81,8 @@ struct AddItemView: View {
                 Form {
                     TextEditor(text: $store.item.content.sending(\.setContent))
                         .lineSpacing(4)
+                        .autocorrectionDisabled(false)
+                        .textInputAutocapitalization(.never)
                         .frame(minHeight: !store.selectedPhotos.isEmpty ? size.height / 3 : (size.height / 3) * 2,
                                maxHeight: size.height)
                 }

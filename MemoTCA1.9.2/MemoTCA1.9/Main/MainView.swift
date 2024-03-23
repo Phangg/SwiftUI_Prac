@@ -22,7 +22,8 @@ struct MainView: View {
                 ForEach(store.items) { item in
                     NavigationLink(state: DetailFeature.State(item: item,
                                                               uiImages: [],
-                                                              isEditing: false, beforeChangeContent: item.content)) {
+                                                              isEditing: false,
+                                                              beforeChangeContent: item.content)) {
                         HStack {
                             Text(item.content)
                                 .lineLimit(1)

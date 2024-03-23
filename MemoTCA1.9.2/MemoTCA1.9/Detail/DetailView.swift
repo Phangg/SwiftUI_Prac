@@ -53,6 +53,8 @@ struct DetailView: View {
                     Form {
                         TextEditor(text: $store.beforeChangeContent.sending(\.editContent))
                             .lineSpacing(4)
+                            .autocorrectionDisabled(false)
+                            .textInputAutocapitalization(.never)
                             .frame(minHeight: (size.height / 3) * 2,
                                    maxHeight: size.height)
                     }
@@ -61,7 +63,7 @@ struct DetailView: View {
             }
             // onAppear - 받아온 이미지 데이터 -> UIImage
             .task {
-                store.send(.dataToImage(store.item.imagesData))
+                store.send(.dataToImage)
             }
             // 타이틀 - 작성 날짜 yyyy.mm.dd
             .navigationTitle(Formatter.dateToString(date: store.item.timestamp))
