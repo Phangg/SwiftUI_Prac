@@ -10,6 +10,7 @@
 		092F92B22BA59F470078CF8A /* ContactDetailFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F92B12BA59F470078CF8A /* ContactDetailFeature.swift */; };
 		092F92B42BA5A3EF0078CF8A /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092F92B32BA5A3EF0078CF8A /* ContactDetailView.swift */; };
 		094D07F62BA5E98A00904E73 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D07F52BA5E98A00904E73 /* CounterView.swift */; };
+		09E3B6EF2BD117EF001BC529 /* SharedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E3B6EE2BD117EE001BC529 /* SharedState.swift */; };
 		09EC3ABB2BA1937500CD0FD5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 09EC3ABA2BA1937500CD0FD5 /* ComposableArchitecture */; };
 		09EC3AC42BA1DE9300CD0FD5 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC3AC32BA1DE9300CD0FD5 /* NumberFactClient.swift */; };
 		09EC3ACA2BA2100000CD0FD5 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC3AC92BA2100000CD0FD5 /* AppView.swift */; };
@@ -48,6 +49,7 @@
 		092F92B12BA59F470078CF8A /* ContactDetailFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailFeature.swift; sourceTree = "<group>"; };
 		092F92B32BA5A3EF0078CF8A /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		094D07F52BA5E98A00904E73 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		09E3B6EE2BD117EE001BC529 /* SharedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedState.swift; sourceTree = "<group>"; };
 		09EC3AC12BA1D62000CD0FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		09EC3AC32BA1DE9300CD0FD5 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
 		09EC3AC92BA2100000CD0FD5 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E3B6ED2BD117DC001BC529 /* SharedState */ = {
+			isa = PBXGroup;
+			children = (
+				09E3B6EE2BD117EE001BC529 /* SharedState.swift */,
+			);
+			path = SharedState;
+			sourceTree = "<group>";
+		};
 		09EC3ACD2BA2124600CD0FD5 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		09EE7DCA2BA18CBD00F86CAC /* TutoralTCA */ = {
 			isa = PBXGroup;
 			children = (
+				09E3B6ED2BD117DC001BC529 /* SharedState */,
 				09EC3AC12BA1D62000CD0FD5 /* Info.plist */,
 				09EE7DCB2BA18CBD00F86CAC /* TutoralTCAApp.swift */,
 				09EC3ACE2BA2125A00CD0FD5 /* App */,
@@ -330,6 +341,7 @@
 				09EC3ACC2BA2105D00CD0FD5 /* AppFeature.swift in Sources */,
 				09EC3AC42BA1DE9300CD0FD5 /* NumberFactClient.swift in Sources */,
 				09EC3AD52BA214E600CD0FD5 /* AddContactFeature.swift in Sources */,
+				09E3B6EF2BD117EF001BC529 /* SharedState.swift in Sources */,
 				09EE7DF62BA18DA800F86CAC /* CounterFeature.swift in Sources */,
 				09EE7DCC2BA18CBD00F86CAC /* TutoralTCAApp.swift in Sources */,
 				09EC3AD72BA215AD00CD0FD5 /* AddContactView.swift in Sources */,
